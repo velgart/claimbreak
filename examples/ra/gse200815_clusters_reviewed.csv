@@ -1,0 +1,27 @@
+cluster,cells,samples,top_sample_share,proposed,coarse,flag,z_T_NK,z_B,z_Plasma,z_Myeloid,z_Mast,z_Fibroblast,z_Endothelial,z_Mural,z_Proliferating,amp_state,amp_state_2,review
+12,341,4,0.4750733137829912,B,B,two-lineage:Mast,-0.39,4.71,-0.26,-0.46,3.3,-0.69,-0.5,-0.4,-0.36,B-0: CD24+CD27+CD11b+ switched memory,B-1: CD24++CD27+IgM+ unswitched memory,"MS4A1 13.5, CD79A 5.9, BANK1 6.2 per 10k; Mast z artefact"
+10,3599,4,0.4523478744095582,Endothelial,Endothelial,,-0.49,-0.22,-0.32,-0.45,-0.25,-0.83,1.91,-0.08,-0.29,E-1: LIFR+ venous,E-2: ICAM1+ venous,accepted as proposed
+9,2446,4,0.5523303352412101,Endothelial,Endothelial,,-0.48,-0.24,-0.37,-0.46,0.12,-0.75,1.68,-0.04,-0.23,E-0: SPARC+ capillary,E-1: LIFR+ venous,accepted as proposed
+11,1188,4,0.7693602693602694,Endothelial,Endothelial,,-0.45,-0.2,-0.39,-0.47,0.03,-0.81,2.24,-0.01,-0.09,E-3: NOTCH4+ Arterial,E-0: SPARC+ capillary,accepted as proposed
+14,922,4,0.7689804772234273,Endothelial,Endothelial,,-0.4,-0.18,-0.22,-0.4,-0.04,0.51,1.22,-0.09,-0.26,E-1: LIFR+ venous,E-2: ICAM1+ venous,accepted as proposed
+13,460,4,0.5478260869565217,Endothelial,Endothelial,,0.41,-0.25,-0.35,-0.45,0.27,-0.72,1.65,-0.03,-0.25,E-2: ICAM1+ venous,E-1: LIFR+ venous,accepted as proposed
+25,113,2,0.5132743362831859,Endothelial,Endothelial,proliferating,-0.43,-0.27,-0.32,-0.41,0.3,-0.65,1.86,0.46,3.44,E-0: SPARC+ capillary,E-3: NOTCH4+ Arterial,accepted as proposed
+20,4340,4,0.9513824884792628,Fibroblast,Fibroblast,,-0.48,-0.24,-0.22,-0.38,-0.35,0.96,-0.54,-0.28,-0.38,F-6: CXCL12-hi sublining,F-5: CD74-high HLA-high sublining,accepted as proposed
+0,3910,4,0.929923273657289,Fibroblast,Fibroblast,,-0.49,-0.23,0.0,-0.36,-0.3,0.88,-0.58,-0.27,-0.37,F-2: CD34+ sublining,F-7: NOTCH3+ sublining,accepted as proposed
+1,2878,4,0.9735927727588604,Fibroblast,Fibroblast,,-0.33,-0.25,-0.08,-0.42,-0.38,1.73,-0.59,0.2,-0.2,F-3: POSTN+ sublining,F-4: DKK3+ sublining,accepted as proposed
+2,1332,3,0.8475975975975976,Fibroblast,Fibroblast,,-0.36,-0.25,0.04,-0.41,-0.46,1.75,-0.58,-0.1,-0.35,F-3: POSTN+ sublining,F-2: CD34+ sublining,accepted as proposed
+16,1201,4,0.7593671940049959,Fibroblast,Fibroblast,,-0.27,-0.23,-0.13,-0.24,-0.41,1.11,-0.58,-0.33,-0.33,F-1: PRG4+ lining,F-0: PRG4+ CLIC5+ lining,accepted as proposed
+3,1154,4,0.987001733102253,Fibroblast,Fibroblast,close:Plasma,-0.46,-0.25,0.12,-0.24,-0.47,0.36,-0.54,-0.21,-0.39,F-0: PRG4+ CLIC5+ lining,F-1: PRG4+ lining,accepted as proposed
+19,541,4,0.8243992606284658,Fibroblast,Fibroblast,close:T_NK,0.32,-0.24,-0.19,-0.37,-0.21,0.75,-0.53,-0.27,-0.36,F-6: CXCL12-hi sublining,F-8: RSPO3-hi lining,accepted as proposed
+21,311,4,0.8456591639871383,Fibroblast,Fibroblast,proliferating,-0.39,-0.24,0.09,-0.38,-0.36,1.52,-0.55,0.6,3.41,F-4: DKK3+ sublining,F-3: POSTN+ sublining,accepted as proposed
+8,2812,4,0.8805120910384068,Mast,T_NK,,0.78,-0.26,-0.39,-0.45,2.03,-0.56,-0.59,-0.41,-0.31,,,"CD3E 1.9, CD2 4.0, IL7R 17 per 10k; tryptase/CPA3/KIT ~0: IL7R+ T cells, not mast (Mast z came from z-scoring near-zero genes)"
+15,1864,4,0.4265021459227467,Mural,Mural,,-0.4,-0.24,-0.29,-0.45,-0.43,0.32,-0.36,4.42,-0.33,Mu-0: Mural,F-7: NOTCH3+ sublining,accepted as proposed
+5,1689,4,0.8756660746003553,Myeloid,Myeloid,,-0.16,-0.18,-0.28,1.89,-0.22,-0.54,-0.5,-0.37,-0.23,M-10: DC2,M-9: DC3,accepted as proposed
+4,1554,4,0.8597168597168597,Myeloid,Myeloid,,-0.44,-0.16,-0.17,2.22,-0.27,-0.64,-0.43,-0.34,-0.37,M-1: MERTK+ SELENOP+ LYVE1-,M-5: C1QA+,accepted as proposed
+22,610,4,0.981967213114754,Myeloid,Myeloid,,-0.45,-0.07,-0.15,3.14,-0.04,-0.9,-0.49,-0.42,-0.36,M-5: C1QA+,M-2: MERTK+ S100A8+,accepted as proposed
+17,38,1,1.0,Myeloid,,,-0.4,-0.18,0.08,1.57,-0.47,0.22,-0.56,-0.29,-0.39,M-3: MERTK+ HBEGF+,M-2: MERTK+ S100A8+,"38 cells from one sample, dropped"
+18,185,4,0.654054054054054,Plasma,Plasma,,-0.43,0.66,4.35,-0.42,-0.36,-0.6,-0.48,-0.36,-0.28,B-2: IgM+IgD+TCL1A+ naive,B-8: IgG1+IgG3+ plasma,"IGHG1 138, JCHAIN 40, MZB1 12 per 10k"
+24,177,3,0.9322033898305084,Plasma,,,-0.36,-0.23,0.59,-0.19,-0.47,-0.31,-0.54,-0.29,-0.19,B-4: AID+BCL6+ GC-like,B-3: IgM+IgD+CD1c+ MZ-like,"weak plasma signal (JCHAIN 7.6, MZB1 1.5), COL1A1 9.3, 93% one sample: low quality / ambient, dropped"
+6,2569,4,0.6196963799143635,T_NK,T_NK,,0.99,-0.25,-0.39,-0.47,0.2,-0.75,-0.54,-0.35,-0.35,CD4+ IL7R+ memory,NK-13: IL7R+CD161+ ILC,accepted as proposed
+7,2557,4,0.543605788032851,T_NK,T_NK,,2.64,-0.24,-0.41,-0.45,-0.29,-0.65,-0.56,-0.41,-0.14,Vdelta1,NK-4: CD56bright CD16- GZMA+CD160+,accepted as proposed
+23,708,4,0.4844632768361582,T_NK,T_NK,,2.9,-0.26,-0.35,-0.47,-0.47,-0.72,-0.54,-0.32,-0.05,CD4+ Tph,CD4+ Tfh/Tph,accepted as proposed

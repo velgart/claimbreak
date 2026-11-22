@@ -1,0 +1,13 @@
+{
+  "title": "claimbreak: segmentation-driven cell-type label error in imaging spatial transcriptomics",
+  "upload_type": "software",
+  "version": "1.7.103",
+  "description": "Python package that measures how many cell-type labels segmentation costs in Xenium and CosMx data without ground truth (claimbreak kept-ratio), and stress-tests label-based spatial conclusions under controlled label and count errors. Accompanies: Elgart V, Loscalzo J, Measuring and reducing segmentation-driven cell-type labeling errors in imaging spatial transcriptomics (2026).",
+  "creators": [
+    {"name": "Elgart, Vlad", "affiliation": "Brigham and Women's Hospital and Harvard Medical School"},
+    {"name": "Loscalzo, Joseph", "affiliation": "Brigham and Women's Hospital and Harvard Medical School"}
+  ],
+  "license": "BSD-3-Clause",
+  "keywords": ["spatial transcriptomics", "segmentation", "cell-type annotation", "Xenium", "CosMx", "label error"],
+  "access_right": "open"
+}

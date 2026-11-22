@@ -1,0 +1,20 @@
+cluster,cells,samples,top_sample_share,proposed,coarse,flag,z_T_NK,z_B,z_Plasma,z_Myeloid,z_Mast,z_Fibroblast,z_Endothelial,z_Mural,z_Proliferating,amp_state,amp_state_2,review
+15,494,4,0.4716599190283401,B,B|Plasma,two-lineage:Plasma,,4.23,3.27,,,-0.77,,,,B-2: IgM+IgD+TCL1A+ naive,B-6: IgM+ plasma,"B and plasma cells in one cluster after Harmony (B z 4.23, Plasma z 3.27; 494 cells, close to the 341 B + 185 plasma of the PCA run): split cell by cell on lineage genes"
+10,5025,4,0.5102487562189054,Endothelial,Endothelial,,,,,,,-0.92,1.73,-0.16,,E-1: LIFR+ venous,E-2: ICAM1+ venous,accepted as proposed
+11,2239,4,0.60786065207682,Endothelial,Endothelial,,,,,,,-0.91,2.23,0.06,-0.04,E-3: NOTCH4+ Arterial,E-0: SPARC+ capillary,accepted as proposed
+12,1014,4,0.703155818540434,Endothelial,Endothelial,,,,-0.23,,,0.46,1.18,-0.11,,E-1: LIFR+ venous,E-2: ICAM1+ venous,Mural z 0.46 vs Endothelial 1.18; venous endothelium
+13,398,4,0.5276381909547738,Endothelial,Endothelial,,0.31,,,,,-0.85,1.62,-0.06,,E-2: ICAM1+ venous,E-1: LIFR+ venous,accepted as proposed
+0,5289,4,0.3503497825675931,Fibroblast,Fibroblast,,,,0.03,-0.28,,0.87,,,,F-0: PRG4+ CLIC5+ lining,F-1: PRG4+ lining,accepted as proposed
+3,4070,4,0.4904176904176904,Fibroblast,Fibroblast,,,,-0.09,,,1.06,,,,F-6: CXCL12-hi sublining,F-5: CD74-high HLA-high sublining,accepted as proposed
+2,3633,4,0.6113404899532067,Fibroblast,Fibroblast,,,,-0.05,,,1.47,,0.01,,F-3: POSTN+ sublining,F-7: NOTCH3+ sublining,accepted as proposed
+1,1211,4,0.4211395540875309,Fibroblast,Fibroblast,,,,0.29,,,1.52,,-0.27,,F-2: CD34+ sublining,F-3: POSTN+ sublining,accepted as proposed
+4,992,4,0.4566532258064516,Fibroblast,Fibroblast,,0.28,,-0.12,,,1.01,,,,F-8: RSPO3-hi lining,F-1: PRG4+ lining,accepted as proposed
+18,550,4,0.7181818181818181,Fibroblast,Fibroblast,close:Mural;proliferating,,,0.03,,,0.66,-0.13,0.28,4.2,F-4: DKK3+ sublining,F-3: POSTN+ sublining,proliferating DKK3+ sublining fibroblasts (Mural z 0.28 vs Fibroblast 0.66); same call as the PCA run
+14,1904,4,0.4159663865546218,Mural,Mural,,,,-0.35,,,0.31,,3.93,,Mu-0: Mural,F-7: NOTCH3+ sublining,accepted as proposed
+5,3139,4,0.4017202930869704,Myeloid,Myeloid,,,,-0.25,3.36,,-0.82,,,,M-5: C1QA+,M-1: MERTK+ SELENOP+ LYVE1-,accepted as proposed
+16,602,4,0.6794019933554817,Myeloid,Myeloid,close:Plasma,,,0.41,0.77,,-0.78,,,,M-10: DC2,M-12: DC1,dendritic cells (DC2/DC1); Plasma z 0.41 low
+6,299,4,0.5183946488294314,Myeloid,,close:Fibroblast,,,0.23,1.19,,0.89,,,,M-3: MERTK+ HBEGF+,M-2: MERTK+ S100A8+,"Myeloid z 1.19 with Fibroblast z 0.89 (as high as lining fibroblasts; cluster 5 macrophages 3.36): probable myeloid-fibroblast doublets or ambient, dropped (the PCA run dropped the same AMP state, M-3, 38 cells)"
+17,82,4,0.524390243902439,Myeloid,,close:Endothelial;two-lineage:Endothelial,,,-0.18,1.3,,-0.9,1.24,-0.07,,M-5: C1QA+,M-8: PLCG2+,"82 cells, Myeloid and Endothelial both high: doublets, dropped"
+7,5270,4,0.4844402277039848,T_NK,T_NK,,0.72,,,,,-0.76,,,,CD4+ IL7R+ memory,CD4+ CD161+ memory,accepted as proposed
+8,2737,4,0.5074899525027402,T_NK,T_NK,,2.23,,,,,-0.75,,,,Vdelta1,CD8+ CD45ROlow/naive,accepted as proposed
+9,551,4,0.5081669691470054,T_NK,T_NK,,2.54,,,,,-0.8,,,,CD4+ Tph,CD4+ IL7R+CCR5+ memory,accepted as proposed

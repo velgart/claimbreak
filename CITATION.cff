@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use claimbreak, please cite the software and the paper below."
+title: "claimbreak"
+abstract: "Measures how much segmentation changes cell-type labels in imaging spatial transcriptomics (Xenium,
+  CosMx) without ground truth, by labeling each cell from halves of its nuclear counts and from its whole-cell
+  counts at the same depth; also stress-tests label-based spatial conclusions under controlled label and count
+  errors."
+type: software
+version: "1.7.103"
+date-released: "2026-11-05"
+license: BSD-3-Clause
+authors:
+  - family-names: Elgart
+    given-names: Vlad
+    affiliation: "Brigham and Women's Hospital and Harvard Medical School"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Loscalzo
+    given-names: Joseph
+    affiliation: "Brigham and Women's Hospital and Harvard Medical School"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+# doi: "10.5281/zenodo.XXXXXXX"          # the reserved Zenodo DOI, once it exists
+keywords: [spatial transcriptomics, segmentation, cell-type annotation, Xenium, CosMx, label error]
+preferred-citation:
+  type: article
+  title: "Measuring and reducing segmentation-driven cell-type labeling errors in imaging spatial transcriptomics"
+  authors:
+    - family-names: Elgart
+      given-names: Vlad
+    - family-names: Loscalzo
+      given-names: Joseph
+  year: 2026

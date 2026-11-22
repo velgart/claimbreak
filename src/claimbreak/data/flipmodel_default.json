@@ -1,0 +1,37 @@
+{
+ "beta": {
+  "b_contact": 0.4423082960105886,
+  "b_far": 0.36257286047594434,
+  "b_share20": 0.30869692331714116,
+  "a_contact": -0.14054344293394938,
+  "second_is_b": 0.4891103803149413,
+  "log_nucleus_area": 0.151250457547964,
+  "log_cell_area": -0.0415579919636077,
+  "nucleus_cell_ratio": -0.11803645610718932,
+  "outside_nucleus_share": 0.31521523395480355,
+  "log_counts": 0.10564710288051085,
+  "margin": -1.4004876723575328
+ },
+ "note": "GSE311609 (Bilous et al. 2026; NSCLC Xenium, 12 sections, donors L1-L4, panels Lung, Custom IO, 5K), coarse labels. Reference nucleus half B, test whole-cell minus half A at half-B depth, null half A; neighbours typed by full-nucleus labels, contact ranks 1-6 within 30 um, far 7-20 within 60 um. Variant: default.",
+ "provenance": {
+  "rows": 2685093,
+  "positives": 281328,
+  "pairs": 45,
+  "features": [
+   "b_contact",
+   "b_far",
+   "b_share20",
+   "a_contact",
+   "second_is_b",
+   "log_nucleus_area",
+   "log_cell_area",
+   "nucleus_cell_ratio",
+   "outside_nucleus_share",
+   "log_counts",
+   "margin"
+  ],
+  "auc_leave_one_unit_out": 0.8991419595376501,
+  "script": "examples/compartment/fit_flipmodel.py",
+  "variant": "default"
+ }
+}

@@ -1,0 +1,45 @@
+# claimbreak experiment template. Run `claimbreak inspect` first to check keys, sections, units and conditions.
+out: results/claimbreak/dss_merfish_v1          # outside the data directory (enforced)
+seed: 0
+reps: 3
+
+data:
+  path: ~/claimbreak_data/REPLACE.h5ad   # only read, never written
+  label_key: REPLACE            # reference labels (ideally the authors'), taken as truth
+  section_key: REPLACE
+  unit_key: REPLACE             # mouse / donor / patient: the independent unit
+  condition_key: REPLACE        # optional; needed for composition and niche-abundance claims
+  spatial: [x, y]               # obs columns, or the name of an obsm entry, e.g. spatial
+  counts_layer: counts          # raw integer counts
+  min_cells_per_label: 50
+#  subset: {Mouse_ID: [m1, m2]}  # optional: keep only these values of an obs column (read before loading counts)
+#  allow_noninteger: false       # counts must be raw integers
+
+analysis:
+  split: 0.5                    # half A: re-calling labels; half B: analysed
+  native_depth: 1.0             # depth (fraction of half A) for the native confusion estimate
+
+plant: []                       # e.g. a planted effect with known truth:
+#  - {kind: spike, sender: REPLACE, receiver: REPLACE, genes: 10, effect: 1.0, lam: 30}
+# a null tissue (all neighborhood effects removed) instead:
+#  - {kind: "null"}
+
+questions:
+  - composition                 # with more than two conditions: {name: composition, conditions: [ref, alt]}
+  - {name: colocalization, k: 10, n_perm: 50, min_ratio: 1.5}
+  - {name: niches, k: 20, n_niches: 10, n_seeds: 20, consensus: 0.7}
+  - {name: proximity_de, k: 10, n_genes: 200, aggregate: units}
+  - {name: proximity_de, label: proximity_de_eff, k: 10, n_genes: 200, aggregate: units, min_effect: 0.3}
+
+perturbations:
+  - {kind: label_errors, name: err_native_random, confusion: native, levels: [0, 0.02, 0.05, 0.1, 0.2]}
+  - {kind: label_errors, name: err_typed_random, confusion: native, type_rates: native, levels: [0, 0.02, 0.05, 0.1, 0.2]}
+  - {kind: label_errors, name: err_by_condition, confusion: native_by_condition, type_rates: native_by_condition, levels: [0, 0.02, 0.05, 0.1, 0.2]}
+  - {kind: label_errors, name: err_native_boundary, confusion: native, spatial: boundary, gamma: 2,
+     levels: [0.02, 0.05, 0.1, 0.2]}
+  - {kind: label_errors, name: err_context, confusion: native, context_bias: 2.0, levels: [0.05, 0.1, 0.2]}
+#  - {kind: label_errors, name: err_disease, confusion: native, condition_mult: {DSS: 1.5}, levels: [0.05, 0.1]}
+#  - {kind: label_errors, name: err_within_lineage, confusion: {lineage: "sep:_"}, levels: [0.05, 0.1, 0.2]}
+  - {kind: recall, levels: [1.0, 0.5, 0.25]}
+  - {kind: contamination, name: contam_ref, lam: 10, levels: [0.05, 0.1, 0.2]}
+  - {kind: contamination, name: contam_recall, lam: 10, labels: recall, levels: [0.05, 0.1, 0.2]}
