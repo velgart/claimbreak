@@ -3,7 +3,7 @@
 Measures how segmentation changes cell-type labels in imaging spatial transcriptomics, without ground truth, and
 stress-tests label-based spatial conclusions under controlled label and count errors. It accompanies Elgart V,
 Loscalzo J, *Measuring and reducing segmentation-driven cell-type labeling errors in imaging spatial
-transcriptomics* (2026; preprint identifier to be added). Software archive: doi:10.5281/zenodo.23987641.
+transcriptomics* (bioRxiv, 2026; doi:10.64898/2026.11.23.768643). Software archive: doi:10.5281/zenodo.23987641.
 
 ## Install
 
